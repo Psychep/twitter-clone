@@ -6,12 +6,12 @@ import Widgets from './layout/Widgets'
 import Profile from './layout/Profile'
 
 const App = () => {
-  const sa = window.location.pathname;
+  const wpath = window.location.pathname;
   console.log(sa)
   return (
     <Container>
       <Sidebar />
-      {sa === "/profile" ? <Profile /> : <Content />}
+      {wpath === "/profile" ? <Profile /> : <Content />}
 
       <Widgets />
     </Container>
